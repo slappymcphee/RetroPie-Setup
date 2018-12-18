@@ -71,15 +71,18 @@ function retropie_welcome() {
     local bfgwht="${bld}$(tput setaf 7)"
 
     local logo=(
-        "                     "
-        "${fgylw}    )  (             "
-        "${fgylw} ( /(  )\ )   (      "
-        "${fgred} )\())(()/(   )\     "
-        "${fgred}((_)\  /(_)|(((_)(   "
-        "${fgred}  ((_)(_))  ()${fggrn} _ ${fgred})\  "
-        "${fggrn} / _ \| _ \ ${fgred}(_)${fggrn}_\ ${fgred}(_)"
-        "${fggrn}| (_) |   /  / _ \   "
-        "${fggrn} \___/|_|_\ /_/ \_\  "
+        "                                   "
+        "${fgblu}       ____                        "
+        "${fgblu}       |  |                        "
+        "${fgblu}       |  |                        "
+        "${fgblu}       |  |                        "		
+        "${fgblu}  ____/    \__${fgred}==${fgblu}_                  "
+        "${fgblu} |               |                 "
+        "${fgblu} |_______________|                 "
+        "${fgred} ____  _   _  ____  ____    __     "
+        "${fgred}(_  _)( )_( )( ___)(  _ \  /__\    "
+        "${fgylw}  )(   ) _ (  )__)  )   / /(__)\   "
+        "${fggrn} (__) (_) (_)(____)(_)\_)(__)(__)  "
         "                     "
         "                     "
         )
@@ -118,7 +121,7 @@ function retropie_welcome() {
                 out+="Temperature........: CPU: $cpuTempC°C/$cpuTempF°F GPU: $gpuTempC°C/$gpuTempF°F"
                 ;;
             10)
-                out+="${fgwht}The RetroPie Project, https://retropie.org.uk"
+                out+="${fgwht}TheRA, http://odroidarena.com" 
                 ;;
         esac
         out+="\n"
